@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/150px-Instagram-Icon.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "A photo and video sharing social media platform that allows users to edit and share content with filters, stories, and direct messaging.",
+    "size": 210,
+    "reviews": 18500000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1850000 },
+      { "name": "2 star", "count": 925000 },
+      { "name": "3 star", "count": 1397500 },
+      { "name": "4 star", "count": 3700000 },
+      { "name": "5 star", "count": 10625000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/150px-Google_2015_logo.svg.png",
+    "title": "Google",
+    "companyName": "Google LLC",
+    "id": 2,
+    "description": "The official Google app for searching the web, getting news, sports scores, weather, and more directly from your mobile device.",
+    "size": 105,
+    "reviews": 4200000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 210000 },
+      { "name": "2 star", "count": 168000 },
+      { "name": "3 star", "count": 336000 },
+      { "name": "4 star", "count": 840000 },
+      { "name": "5 star", "count": 2646000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/150px-WhatsApp.svg.png",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 3,
+    "description": "A messaging app that allows users to send text, voice messages, and make voice and video calls over the internet.",
+    "size": 180,
+    "reviews": 12000000,
+    "ratingAvg": 4.1,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 720000 },
+      { "name": "3 star", "count": 1080000 },
+      { "name": "4 star", "count": 2400000 },
+      { "name": "5 star", "count": 6300000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/150px-Instagram_logo_2016.svg.png",
+    "title": "Spotify",
+    "companyName": "Spotify Technology S.A.",
+    "id": 4,
+    "description": "A digital music streaming service that gives users access to millions of songs, podcasts, and videos from artists around the world.",
+    "size": 195,
+    "reviews": 8700000,
+    "ratingAvg": 4.4,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 870000 },
+      { "name": "2 star", "count": 435000 },
+      { "name": "3 star", "count": 783000 },
+      { "name": "4 star", "count": 1740000 },
+      { "name": "5 star", "count": 4872000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/YouTube_logo_2017.svg/150px-YouTube_logo_2017.svg.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "A video-sharing platform where users can upload, view, rate, share, and comment on videos, including music videos, movie clips, and more.",
+    "size": 170,
+    "reviews": 15000000,
+    "ratingAvg": 4.2,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2250000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 1800000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 6750000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/150px-Amazon_logo.svg.png",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon.com, Inc.",
+    "id": 6,
+    "description": "An e-commerce app that allows users to browse, purchase, and track products from Amazon's vast online marketplace.",
+    "size": 160,
+    "reviews": 9500000,
+    "ratingAvg": 4.0,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1900000 },
+      { "name": "2 star", "count": 950000 },
+      { "name": "3 star", "count": 1425000 },
+      { "name": "4 star", "count": 1900000 },
+      { "name": "5 star", "count": 3325000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Microsoft_Office_2013_logo.svg/150px-Microsoft_Office_2013_logo.svg.png",
+    "title": "Microsoft Office",
+    "companyName": "Microsoft Corporation",
+    "id": 7,
+    "description": "A productivity suite including Word, Excel, PowerPoint, and OneNote, allowing users to create, edit, and share documents on the go.",
+    "size": 250,
+    "reviews": 5600000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 280000 },
+      { "name": "2 star", "count": 168000 },
+      { "name": "3 star", "count": 224000 },
+      { "name": "4 star", "count": 896000 },
+      { "name": "5 star", "count": 4032000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Apple_Music_logo.svg/150px-Apple_Music_logo.svg.png",
+    "title": "Apple Music",
+    "companyName": "Apple Inc.",
+    "id": 8,
+    "description": "A music and video streaming service offering access to over 100 million songs, curated playlists, and exclusive content.",
+    "size": 185,
+    "reviews": 3200000,
+    "ratingAvg": 4.7,
+    "downloads": 800000000,
+    "ratings": [
+      { "name": "1 star", "count": 96000 },
+      { "name": "2 star", "count": 64000 },
+      { "name": "3 star", "count": 160000 },
+      { "name": "4 star", "count": 448000 },
+      { "name": "5 star", "count": 2432000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/TikTok_logo.svg/150px-TikTok_logo.svg.png",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "id": 9,
+    "description": "A short-form video platform where users create, share, and discover videos ranging from comedy and dance to education and lifestyle.",
+    "size": 200,
+    "reviews": 11000000,
+    "ratingAvg": 4.3,
+    "downloads": 3000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1650000 },
+      { "name": "2 star", "count": 880000 },
+      { "name": "3 star", "count": 1320000 },
+      { "name": "4 star", "count": 2200000 },
+      { "name": "5 star", "count": 4950000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/NASA_logo.svg/150px-NASA_logo.svg.png",
+    "title": "NASA App",
+    "companyName": "National Aeronautics and Space Administration",
+    "id": 10,
+    "description": "An official app providing real-time satellite tracking, mission updates, images, videos, and live streams from space missions.",
+    "size": 120,
+    "reviews": 85000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1700 },
+      { "name": "2 star", "count": 1020 },
+      { "name": "3 star", "count": 2550 },
+      { "name": "4 star", "count": 6800 },
+      { "name": "5 star", "count": 72930 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Coursera_logo.svg/150px-Coursera_logo.svg.png",
+    "title": "Coursera",
+    "companyName": "Coursera, Inc.",
+    "id": 11,
+    "description": "An online learning platform offering courses, certifications, and degrees from universities and companies worldwide.",
+    "size": 140,
+    "reviews": 420000,
+    "ratingAvg": 4.4,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 21000 },
+      { "name": "2 star", "count": 16800 },
+      { "name": "3 star", "count": 33600 },
+      { "name": "4 star", "count": 84000 },
+      { "name": "5 star", "count": 264600 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Zoom_Logo.svg/150px-Zoom_Logo.svg.png",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 12,
+    "description": "A video conferencing app that enables virtual meetings, webinars, and screen sharing for personal and professional use.",
+    "size": 175,
+    "reviews": 6800000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1020000 },
+      { "name": "2 star", "count": 544000 },
+      { "name": "3 star", "count": 816000 },
+      { "name": "4 star", "count": 1360000 },
+      { "name": "5 star", "count": 3060000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Adobe_Creative_Cloud_logo.svg/150px-Adobe_Creative_Cloud_logo.svg.png",
+    "title": "Adobe Express",
+    "companyName": "Adobe Inc.",
+    "id": 13,
+    "description": "A design app for creating social media graphics, videos, and web pages with templates, animations, and branding tools.",
+    "size": 190,
+    "reviews": 310000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 15500 },
+      { "name": "2 star", "count": 12400 },
+      { "name": "3 star", "count": 27900 },
+      { "name": "4 star", "count": 62000 },
+      { "name": "5 star", "count": 192200 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Canva_logo.svg/150px-Canva_logo.svg.png",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 14,
+    "description": "A graphic design platform that allows users to create social media posts, presentations, posters, and other visual content easily.",
+    "size": 180,
+    "reviews": 1200000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 48000 },
+      { "name": "3 star", "count": 108000 },
+      { "name": "4 star", "count": 240000 },
+      { "name": "5 star", "count": 744000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Microsoft_Teams_logo.svg/150px-Microsoft_Teams_logo.svg.png",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 15,
+    "description": "A collaboration platform integrating chat, video meetings, file storage, and app integration for teams and organizations.",
+    "size": 220,
+    "reviews": 2100000,
+    "ratingAvg": 4.3,
+    "downloads": 250000000,
+    "ratings": [
+      { "name": "1 star", "count": 315000 },
+      { "name": "2 star", "count": 168000 },
+      { "name": "3 star", "count": 315000 },
+      { "name": "4 star", "count": 420000 },
+      { "name": "5 star", "count": 882000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Duolingo_logo.svg/150px-Duolingo_logo.svg.png",
+    "title": "Duolingo",
+    "companyName": "Duolingo, Inc.",
+    "id": 16,
+    "description": "A language-learning app offering gamified lessons in over 40 languages, helping users learn vocabulary, grammar, and pronunciation.",
+    "size": 130,
+    "reviews": 2400000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 72000 },
+      { "name": "2 star", "count": 48000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 336000 },
+      { "name": "5 star", "count": 1824000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Netflix_2015_logo.svg/150px-Netflix_2015_logo.svg.png",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 17,
+    "description": "A subscription-based streaming service offering a wide variety of TV shows, movies, documentaries, and original content.",
+    "size": 165,
+    "reviews": 7800000,
+    "ratingAvg": 4.3,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 1170000 },
+      { "name": "2 star", "count": 624000 },
+      { "name": "3 star", "count": 936000 },
+      { "name": "4 star", "count": 1560000 },
+      { "name": "5 star", "count": 3510000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Snapchat_logo.svg/150px-Snapchat_logo.svg.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 18,
+    "description": "A multimedia messaging app known for its disappearing messages, filters, and Stories that let users share moments in real time.",
+    "size": 170,
+    "reviews": 5300000,
+    "ratingAvg": 4.0,
+    "downloads": 700000000,
+    "ratings": [
+      { "name": "1 star", "count": 795000 },
+      { "name": "2 star", "count": 424000 },
+      { "name": "3 star", "count": 636000 },
+      { "name": "4 star", "count": 1060000 },
+      { "name": "5 star", "count": 2385000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/LinkedIn_Logo.svg/150px-LinkedIn_Logo.svg.png",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 19,
+    "description": "A professional networking platform for job searching, connecting with colleagues, sharing industry insights, and building a career profile.",
+    "size": 155,
+    "reviews": 3800000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 570000 },
+      { "name": "2 star", "count": 304000 },
+      { "name": "3 star", "count": 456000 },
+      { "name": "4 star", "count": 760000 },
+      { "name": "5 star", "count": 1710000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Google_Maps_Logo_2020.svg/150px-Google_Maps_Logo_2020.svg.png",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "A mapping service that provides navigation, real-time traffic updates, public transit routes, and location discovery features.",
+    "size": 145,
+    "reviews": 13000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 390000 },
+      { "name": "2 star", "count": 260000 },
+      { "name": "3 star", "count": 390000 },
+      { "name": "4 star", "count": 1300000 },
+      { "name": "5 star", "count": 10660000 }
+    ]
+  }
+]
