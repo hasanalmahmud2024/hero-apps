@@ -1,10 +1,14 @@
 import React from 'react';
+import Banner from '../../components/Banner/Banner';
+import States from '../../components/States/States';
 
 const Home = () => {
     return (
-        <div  className='max-w-6xl mx-auto'>
-            <h1>This is Home</h1>
-        </div>
+        <>
+            <Banner></Banner>
+
+           <States></States>
+        </>
     );
 };
 
