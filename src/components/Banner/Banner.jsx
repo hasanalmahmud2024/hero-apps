@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div>
             {/* Banner  */}
-            <div className=" bg-base-200 min-h-90vh ">
+            <div className="  min-h-90vh ">
                 <div className="flex text-center flex-col items-center">
                     <div className="max-w-2xl mt-26 md:mt-30 ">
                         <h1 className="md:px-30 sm:px-16 text-5xl font-bold">We Build <span className='text-purple-500'>Productive</span> Apps</h1>
@@ -38,10 +38,11 @@ const Banner = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            App Store</button>
+                            App Store
+                        </button>
                     </div>
-                   
-                    <img src={heroImg} className='mt-6 mb-0 max-w-100' alt="hero img" />
+
+                    <img src={heroImg} className='mt-6 max-w-100' alt="hero img" />
 
                 </div>
             </div>

@@ -1,9 +1,33 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
 
 const Apps = () => {
     return (
-        <div  className='max-w-6xl mx-auto'>
-            <h1>This is Apps</h1>
+        <div className='pt-24 max-w-6xl mx-auto text-center mb-8 '>
+            <h1 className='text-5xl font-bold py-3'>Our All Applications</h1>
+            <p className="text-sm py-2 mb-5">Explore All Apps on the market developed by us. We code for Millions</p>
+
+            <div className='flex justify-between items-center m-4'>
+                <h4 className='text-xl font-semibold'>(132) Apps Found</h4>
+                <label className="input w-64">
+                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g
+                            strokeLinejoin="round"
+                            strokeLinecap="round"
+                            strokeWidth="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </g>
+                    </svg>
+                    <input type="search"  placeholder="Search Apps" />
+                </label>
+            </div>
+            <div className=' grid grid-cols-1 md:grid-cols-4 gap-4'>
+                <Card></Card>
+            </div>
         </div>
     );
 };

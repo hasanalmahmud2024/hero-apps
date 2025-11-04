@@ -33,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-linear-to-tr from-purple-600 to-purple-400"
+                <a className="btn bg-linear-to-tr from-purple-600 to-purple-400 text-white"
                     href="https://github.com/hasanalmahmud2024/hero-apps.git"
                     target="_blank"
                     rel="noopener noreferrer">
