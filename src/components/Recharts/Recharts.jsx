@@ -1,22 +1,22 @@
 import React from 'react';
-import { Bar, BarChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-const data = [
-    { name: 'A', value: 400 },
-    { name: 'B', value: 300 },
-    { name: 'C', value: 600 },
-];
 
-const Recharts = () => {
+
+const Recharts = ({ ratings }) => {
+    const reverseRatings = [...ratings].reverse();
+    console.log(reverseRatings);
+
+    
     return (
-        <div>
-            <BarChart width={500} height={300} layout='horizontal' data={data}>
+            <ResponsiveContainer width="100%" height={200} >
+            <BarChart layout='vertical' data={reverseRatings}>
+                <XAxis type='number'></XAxis>
                 <YAxis dataKey='name' type='category'></YAxis>
-                <XAxis dataKey='value' type='number'></XAxis>
                 <Tooltip></Tooltip>
-                <Bar dataKey='value' fill='green' barSize={30}></Bar>
+                <Bar dataKey='count' fill='orange' barSize={25}></Bar>
             </BarChart>
-        </div>
+            </ResponsiveContainer>
     );
 };
 

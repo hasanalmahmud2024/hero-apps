@@ -1,7 +1,11 @@
 import React from 'react';
 import Card from '../../components/Card/Card';
+import { useLoaderData } from 'react-router';
 
 const Apps = () => {
+    const apps = useLoaderData()
+    // console.log(apps);
+
     return (
         <div className='pt-24 max-w-6xl mx-auto text-center mb-8 '>
             <h1 className='text-5xl font-bold py-3'>Our All Applications</h1>
@@ -26,7 +30,9 @@ const Apps = () => {
                 </label>
             </div>
             <div className=' grid grid-cols-1 md:grid-cols-4 gap-4'>
-                <Card></Card>
+                {
+                    apps.map((app) => <Card key={app.id} app={app}></Card>)
+                }
             </div>
         </div>
     );
