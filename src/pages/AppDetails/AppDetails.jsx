@@ -5,17 +5,22 @@ import iconReview from '../../assets/icon-review.png'
 import Recharts from '../../components/Recharts/Recharts';
 import { useLoaderData, useParams } from 'react-router';
 import { addToStoredDB } from '../../utility/addToDB';
+import AppDetailsError from '../AppDetailsError/AppDetailsError';
 
 
 
 const AppDetails = () => {
     const [isInstalled, setIsInstalled] = useState(false);
-    const appId = useParams();
+    const {id} = useParams();
     // console.log(appId.id);
 
     const apps = useLoaderData();
-    const app = apps.find(app => app.id === parseInt(appId.id));
+    const app = apps.find(app => app.id === parseInt(id));
     // console.log(app);
+
+    if (!app) {
+        return <AppDetailsError></AppDetailsError>
+    }
 
     const { image, description, size, companyName, title, downloads, ratingAvg, ratings, reviews } = app;
 
@@ -57,7 +62,7 @@ const AppDetails = () => {
                     </div>
                     <div className="card-actions mt-2">
                         <button onClick={()=>{
-                            addToStoredDB(appId.id);
+                            addToStoredDB(id);
                             setIsInstalled(true);
                             }}
                             disabled={isInstalled}

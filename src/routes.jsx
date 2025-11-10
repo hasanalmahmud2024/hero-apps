@@ -38,9 +38,7 @@ export const router = createBrowserRouter([
                 path: '/appDetails/:id',
                 Component: AppDetails,
                 loader: () => fetch('/appsData.json'),
-                errorElement: (
-                    <AppDetailsError></AppDetailsError>
-                ),
+                
             }
 
         ]
