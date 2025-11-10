@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import iconRatings from '../../assets/icon-ratings.png'
 import iconDownloads from '../../assets/icon-downloads.png'
 import iconReview from '../../assets/icon-review.png'
@@ -9,6 +9,7 @@ import { addToStoredDB } from '../../utility/addToDB';
 
 
 const AppDetails = () => {
+    const [isInstalled, setIsInstalled] = useState(false);
     const appId = useParams();
     // console.log(appId.id);
 
@@ -55,7 +56,15 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className="card-actions mt-2">
-                        <button onClick={()=>addToStoredDB(appId.id)} className="btn btn-success text-white">Install Now ({size} MB)</button>
+                        <button onClick={()=>{
+                            addToStoredDB(appId.id);
+                            setIsInstalled(true);
+                            }}
+                            disabled={isInstalled}
+                            className="btn btn-success text-white"
+                            >
+                                {isInstalled? 'Installed': (`Install Now (${size} MB)`)}
+                                </button>
                     </div>
                 </div>
             </div>
