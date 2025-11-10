@@ -2,11 +2,11 @@ import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import States from '../../components/States/States';
 import Card from '../../components/Card/Card';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 
 const Home = () => {
     const apps = useLoaderData()
-    console.log(apps);
+    // console.log(apps);
     
     return (
         <>
@@ -23,9 +23,9 @@ const Home = () => {
                     }
                 </div>
 
-                <div className='flex justify-center'>
+                <Link to={'/apps'} className='flex justify-center'>
                     <button className='btn bg-linear-to-tr from-purple-600 to-purple-400 text-white'>Show All</button>
-                </div>
+                </Link>
             </div>
         </>
     );

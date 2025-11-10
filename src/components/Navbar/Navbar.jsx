@@ -47,7 +47,8 @@ const Navbar = () => {
                             </clipPath>
                         </defs>
                     </svg>
-                    <span>Contribute</span></a>
+                    <span>Contribute</span>
+                    </a>
             </div>
         </div>
     );

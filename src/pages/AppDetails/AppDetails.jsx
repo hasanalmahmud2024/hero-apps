@@ -4,7 +4,7 @@ import iconDownloads from '../../assets/icon-downloads.png'
 import iconReview from '../../assets/icon-review.png'
 import Recharts from '../../components/Recharts/Recharts';
 import { useLoaderData, useParams } from 'react-router';
-import demoImg03 from '../../assets/demo-app (3).webp'
+import { addToStoredDB } from '../../utility/addToDB';
 
 
 
@@ -24,6 +24,7 @@ const AppDetails = () => {
             <div className="card lg:card-side rounded-none">
                 <figure>
                     <img
+                        className='rounded-2xl'
                         src={image}
                         alt={`${title} img`} />
                 </figure>
@@ -54,7 +55,7 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className="card-actions mt-2">
-                        <button className="btn btn-success text-white">Install Now ({size} MB)</button>
+                        <button onClick={()=>addToStoredDB(appId.id)} className="btn btn-success text-white">Install Now ({size} MB)</button>
                     </div>
                 </div>
             </div>

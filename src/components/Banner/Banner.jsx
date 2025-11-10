@@ -12,15 +12,21 @@ const Banner = () => {
                         <p className="text-gray-500 py-6">
                             At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
                         </p>
-                        <button className="btn py-6 mr-5">
+                        <a className="btn py-6 mr-5"
+                            href="https://play.google.com/store" 
+                            target="_blank" 
+                            rel="noopener">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.03711 0.734506L22.0478 11.1302L28.9817 15.136C29.6323 15.5274 29.6376 16.4626 28.9918 16.8591L28.9613 16.8796L4.05227 31.2606L4.03182 31.2707C3.77775 31.4131 3.49817 31.4283 3.2542 31.3571C2.84758 31.2351 2.5271 30.8641 2.5271 30.3812V1.61896C2.5271 1.13607 2.84734 0.765063 3.2542 0.643078C3.50322 0.571619 3.7828 0.587018 4.03711 0.734506Z" fill="#47BCFF" />
                                 <path d="M4.03707 0.734321L22.0478 11.13L17.5235 16L3.25415 0.642652C3.50317 0.571434 3.78275 0.586832 4.03707 0.734321Z" fill="#0BDF74" />
                                 <path d="M22.0477 11.13L28.9816 15.1358C29.6322 15.5272 29.6375 16.4625 28.9917 16.859L28.9612 16.8794L22.0477 20.8647L17.5234 16L22.0477 11.13Z" fill="#FDBA21" />
                                 <path d="M17.5235 16L22.0478 20.865L4.05223 31.2606L4.03177 31.2707C3.7777 31.4132 3.49812 31.4283 3.25415 31.3571L17.5235 16Z" fill="#FB434C" />
                             </svg>
-                            Google Play</button>
-                        <button className="btn p-6">
+                            Google Play</a>
+                        <a className="btn p-6"
+                            href="https://www.apple.com/app-store/" 
+                            target="_blank" 
+                            rel="noopener">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1_716)">
                                     <path d="M25.5328 0.00201416H6.46319C2.89163 0.00201416 0 2.89364 0 6.4652V25.5388C0 29.1064 2.89163 31.998 6.46319 31.998H25.5368C29.1044 31.998 32 29.1064 32 25.5348V6.4652C31.996 2.89364 29.1044 0.00201416 25.5328 0.00201416Z" fill="url(#paint0_linear_1_716)" />
@@ -39,7 +45,7 @@ const Banner = () => {
                                 </defs>
                             </svg>
                             App Store
-                        </button>
+                        </a>
                     </div>
 
                     <img src={heroImg} className='mt-6 max-w-100' alt="hero img" />

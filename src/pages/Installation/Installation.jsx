@@ -1,11 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import InstalledCard from '../../components/InstalledCard/InstalledCard';
+import { useLoaderData } from 'react-router';
+import { addToStoredDB, getStoredApps } from '../../utility/addToDB';
 
 const Installation = () => {
+    const [appList, setAppList] = useState([]);
     const [sortOption, setSortOption] = useState('Name');
 
+    const apps = useLoaderData();
+    // console.log(apps);
+
+    const storedAppIds = getStoredApps()
+    // console.log(storedAppIds); // array of id string
+    const convertedStoredAppIds = storedAppIds.map(id => parseInt(id));
+    // console.log(convertedStoredAppIds);
+
+    const installedApps = apps.filter(app => convertedStoredAppIds.includes(app.id));
+    // console.log(installedApps); // installed apps
+
+    useEffect(() => {
+        setAppList(installedApps);
+        // console.log(installedApps); 
+    }, []);
+
+
+
+    const handleUninstall = (id) => {
+        console.log(id); // number
+        const updatedAppList = appList.filter(app => app.id !== id);
+        setAppList(updatedAppList);
+        console.log(updatedAppList);
+
+        const updatedAppIds = updatedAppList.map(app => app.id);
+        const updatedAppIdsSTR = JSON.stringify(updatedAppIds);
+        localStorage.setItem('InstalledApps', updatedAppIdsSTR)
+    }
+
+
     return (
-        <div className='pt-24 max-w-6xl mx-auto mb-5 '>
+        <div className='pt-24 max-w-6xl mx-auto mb-5 min-h-screen'>
             <h1 className='text-5xl font-bold py-3 text-center'>Your Installed Apps</h1>
             <p className="text-sm py-2 mb-5 text-center">Explore All Trending Apps on the market developed by us</p>
 
@@ -27,11 +60,12 @@ const Installation = () => {
             </div>
 
 
-            <div className="list rounded-box  gap-3">
-                <InstalledCard></InstalledCard>
-                <InstalledCard></InstalledCard>
-                <InstalledCard></InstalledCard>
-                <InstalledCard></InstalledCard>
+            <div className="list rounded-box gap-3">
+                {appList.length > 0 ? (
+                    appList.map(app => <InstalledCard key={app.id} app={app} handleUninstall={handleUninstall} />)
+                ) : (
+                        <p className='flex items-center justify-center text-3xl text-center min-h-[20vw]'>No App Installed</p>
+                )}
             </div>
         </div>
     );

@@ -4,12 +4,12 @@ import logoImg from '../../assets/logo.png'
 const Footer = () => {
     return (
         <footer >
-            <div className=" footer sm:footer-horizontal bg-neutral text-neutral-content p-10 border-b border-gray-400">
-                <aside className='flex items-center'>
+            <div className=" footer sm:footer-horizontal items-center bg-neutral-900 opacity-70 text-neutral-content px-8 pb-5 pt-12">
+                <aside className='flex items-center '>
                     <img src={logoImg} className='w-8' alt="logo" />
-                    <h4 className='text-xl font-bold'>HERO.IO</h4>
+                    <h4 className='text-xl font-bold '>HERO.IO</h4>
                 </aside>
-                <nav className='sm:justify-self-end'>
+                <nav className='sm:justify-self-end '>
                     <h6 className="text-xl font-semibold">Social Links</h6>
                     <div className="grid grid-flow-col gap-4">
                         <a>
@@ -54,8 +54,10 @@ const Footer = () => {
                     </div>
                 </nav>
             </div>
-            <aside className='footer footer-center bg-neutral text-neutral-content py-3'>
-                    <p>Copyright © {new Date().getFullYear()} - All right reserved </p>
+            <div className="border  opacity-30 mx-[3vw]"></div>
+
+            <aside className='footer footer-center opacity-50 bg-neutral-900 text-neutral-content pb-2 pt-1'>
+                    <p >Copyright © {new Date().getFullYear()} - All right reserved </p>
                 </aside>
         </footer>
     );

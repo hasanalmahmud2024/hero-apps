@@ -5,7 +5,7 @@ import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recha
 
 const Recharts = ({ ratings }) => {
     const reverseRatings = [...ratings].reverse();
-    console.log(reverseRatings);
+    // console.log(reverseRatings);
 
     
     return (
