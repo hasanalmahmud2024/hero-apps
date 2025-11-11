@@ -1,12 +1,11 @@
 import React from 'react';
 import iconRatings from '../../assets/icon-ratings.png'
 import iconDownloads from '../../assets/icon-downloads.png'
-import demoImg03 from '../../assets/demo-app (3).webp'
 import { Link } from 'react-router';
 
 const Card = ({app}) => {
     // console.log(app.id);
-    const { image={demoImg03}, id,  title, downloads, ratingAvg,} = app;
+    const { image, id,  title, downloads, ratingAvg,} = app;
     
     return (
         <Link to={`/appDetails/${id}`}>

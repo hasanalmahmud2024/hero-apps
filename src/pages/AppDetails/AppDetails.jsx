@@ -42,7 +42,7 @@ const AppDetails = () => {
                     <div className="border opacity-40 mt-2"></div>
 
 
-                    <div className="flex items-center gap-12 mt-5">
+                    <div className="flex items-center gap-12 mt-5 mx-w-screen">
                         <div className="">
                             <img src={iconDownloads} alt="downloads icon" />
                             <div className="opacity-85 mt-1.5 whitespace-nowrap">Downloads</div>
@@ -84,7 +84,7 @@ const AppDetails = () => {
             </div>
 
             <div className="border opacity-40 md:mt-5 mx-[3vw] md:mx-0"></div>
-            <div className='space-y-5 my-5'>
+            <div className='space-y-5 my-5 px-4'>
                 <h3 className='card-title'>Description</h3>
                 <p className='text-sm opacity-70'>{description}</p>
             </div>
