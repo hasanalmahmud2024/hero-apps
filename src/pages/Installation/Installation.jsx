@@ -8,15 +8,14 @@ const Installation = () => {
     const [sortOption, setSortOption] = useState('');
 
     const apps = useLoaderData();
-    // console.log(apps);
 
     const storedAppIds = getStoredApps()
-    // console.log(storedAppIds); // array of id string
+    // console.log(storedAppIds); // array of ids string
     const convertedStoredAppIds = storedAppIds.map(id => parseInt(id));
     // console.log(convertedStoredAppIds);
 
     const installedApps = apps.filter(app => convertedStoredAppIds.includes(app.id));
-    // console.log(installedApps); // installed apps
+    // console.log(installedApps); // 
 
     useEffect(() => {
         setAppList(installedApps);
@@ -38,7 +37,7 @@ const Installation = () => {
         console.log(id); // number
         const updatedAppList = appList.filter(app => app.id !== id);
         setAppList(updatedAppList);
-        console.log(updatedAppList);
+        // console.log(updatedAppList);
 
         const updatedAppIds = updatedAppList.map(app => app.id);
         const updatedAppIdsSTR = JSON.stringify(updatedAppIds);

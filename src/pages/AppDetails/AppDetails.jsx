@@ -6,12 +6,13 @@ import Recharts from '../../components/Recharts/Recharts';
 import { useLoaderData, useParams } from 'react-router';
 import { addToStoredDB } from '../../utility/addToDB';
 import AppDetailsError from '../AppDetailsError/AppDetailsError';
+import { Bounce, ToastContainer } from 'react-toastify';
 
 
 
 const AppDetails = () => {
     const [isInstalled, setIsInstalled] = useState(false);
-    const {id} = useParams();
+    const { id } = useParams();
     // console.log(appId.id);
 
     const apps = useLoaderData();
@@ -61,15 +62,15 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className="card-actions mt-2">
-                        <button onClick={()=>{
+                        <button onClick={() => {
                             addToStoredDB(id);
                             setIsInstalled(true);
-                            }}
+                        }}
                             disabled={isInstalled}
                             className="btn btn-success text-white"
-                            >
-                                {isInstalled? 'Installed': (`Install Now (${size} MB)`)}
-                                </button>
+                        >
+                            {isInstalled ? 'Installed' : (`Install Now (${size} MB)`)}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -86,7 +87,19 @@ const AppDetails = () => {
                 <h3 className='card-title'>Description</h3>
                 <p className='text-sm opacity-70'>{description}</p>
             </div>
-
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+                transition={Bounce}
+            />
         </div>
     );
 };

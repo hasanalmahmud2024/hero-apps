@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 
 const getStoredApps = () => {
@@ -18,7 +19,7 @@ const addToStoredDB = (id) => {
     const storedAppsData = getStoredApps();
     
     if (storedAppsData.includes(id)) {
-        alert('This App is Already Installed')
+        toast('This App is Already Installed')
     } else {
         storedAppsData.push(id);
 
