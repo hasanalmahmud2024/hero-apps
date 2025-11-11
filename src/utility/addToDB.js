@@ -19,10 +19,10 @@ const addToStoredDB = (id) => {
     const storedAppsData = getStoredApps();
     
     if (storedAppsData.includes(id)) {
-        toast('This App is Already Installed')
+        toast.error('This App is Already Installed')
     } else {
         storedAppsData.push(id);
-
+        toast.success('App Installed');
         const data = JSON.stringify(storedAppsData);
         localStorage.setItem("InstalledApps", data);
     }

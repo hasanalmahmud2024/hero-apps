@@ -1,13 +1,14 @@
-import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import States from '../../components/States/States';
 import Card from '../../components/Card/Card';
-import { Link, useLoaderData } from 'react-router';
+import { Link, useLoaderData} from 'react-router';
 
 const Home = () => {
+
+
     const apps = useLoaderData()
     // console.log(apps);
-    
+
     return (
         <>
             <Banner></Banner>
@@ -19,7 +20,7 @@ const Home = () => {
 
                 <div className='my-8 mx-4 grid grid-cols-1 md:grid-cols-4 gap-4'>
                     {
-                        apps.slice(0,8).map((app)=><Card key={app.id} app={app}></Card>)
+                        apps.slice(0, 8).map((app) => <Card key={app.id} app={app}></Card>)
                     }
                 </div>
 

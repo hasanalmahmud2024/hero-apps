@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import InstalledCard from '../../components/InstalledCard/InstalledCard';
 import { useLoaderData } from 'react-router';
 import { getStoredApps } from '../../utility/addToDB';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Installation = () => {
     const [appList, setAppList] = useState([]);
@@ -38,7 +39,8 @@ const Installation = () => {
         const updatedAppList = appList.filter(app => app.id !== id);
         setAppList(updatedAppList);
         // console.log(updatedAppList);
-
+        toast.success("App uninstalled")
+        
         const updatedAppIds = updatedAppList.map(app => app.id);
         const updatedAppIdsSTR = JSON.stringify(updatedAppIds);
         localStorage.setItem('InstalledApps', updatedAppIdsSTR)
@@ -54,7 +56,7 @@ const Installation = () => {
                 <h4 className='text-xl font-semibold'>{appList.length} Apps Found</h4>
                 <div className='dropdown dropdown-center'>
                     <div tabIndex={0} role="button" className="btn m-1">
-                        Sort By Downloads {sortOption}
+                        {sortOption ? `Downloads ${sortOption}` : "Sort By Downloads"}
                         <svg className="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
@@ -75,6 +77,7 @@ const Installation = () => {
                     <p className='flex items-center justify-center text-3xl text-center min-h-[20vw]'>No App Installed</p>
                 )}
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
