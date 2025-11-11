@@ -42,7 +42,7 @@ const AppDetails = () => {
                     <div className="border opacity-40 mt-2"></div>
 
 
-                    <div className="flex items-center gap-12 mt-5 mx-w-screen">
+                    <div className="flex flex-wrap md:flex-nowrap items-center gap-12 mt-5 ">
                         <div className="">
                             <img src={iconDownloads} alt="downloads icon" />
                             <div className="opacity-85 mt-1.5 whitespace-nowrap">Downloads</div>
