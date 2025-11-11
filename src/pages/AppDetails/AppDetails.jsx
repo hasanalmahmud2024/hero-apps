@@ -42,30 +42,29 @@ const AppDetails = () => {
                     <div className="border opacity-40 mt-2"></div>
 
 
-                    <div className="flex flex-wrap md:flex-nowrap items-center gap-12 mt-5 ">
+                    <div className="flex items-center gap-5 md:gap-12 mt-5 ">
                         <div className="">
                             <img src={iconDownloads} alt="downloads icon" />
                             <div className="opacity-85 mt-1.5 whitespace-nowrap">Downloads</div>
-                            <div className="stat-value ">{downloads}</div>
+                            <div className="text-2xl md:text-3xl font-bold ">{downloads}</div>
                         </div>
 
                         <div className="">
                             <img src={iconRatings} alt="ratings icon" />
                             <div className="opacity-85 mt-1.5 whitespace-nowrap">Average Ratings</div>
-                            <div className="stat-value">{ratingAvg}</div>
+                            <div className="text-2xl md:text-3xl font-bold">{ratingAvg}</div>
                         </div>
 
                         <div className="">
                             <img src={iconReview} alt="review icon" />
                             <div className="opacity-85 mt-1.5 whitespace-nowrap">Total Reviews</div>
-                            <div className="stat-value">{reviews}</div>
+                            <div className="text-2xl md:text-3xl font-bold">{reviews}</div>
                         </div>
                     </div>
                     <div className="card-actions mt-2">
                         <button onClick={() => {
                             addToStoredDB(id);
                             setIsInstalled(true);
-
                         }}
                             disabled={isInstalled}
                             className="btn btn-success text-white"
@@ -78,13 +77,13 @@ const AppDetails = () => {
 
             <div className="border opacity-40 md:mt-5 mx-[3vw] md:mx-0"></div>
 
-            <div className='my-4'>
+            <div className='my-4 pr-2'>
                 <h3 className='m-4 text-xl font-semibold'>Ratings</h3>
                 <Recharts ratings={ratings}></Recharts>
             </div>
 
             <div className="border opacity-40 md:mt-5 mx-[3vw] md:mx-0"></div>
-            <div className='space-y-5 my-5 px-4'>
+            <div className='space-y-5 my-5 px-4 md:px-0'>
                 <h3 className='card-title'>Description</h3>
                 <p className='text-sm opacity-70'>{description}</p>
             </div>

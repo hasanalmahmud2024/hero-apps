@@ -9,7 +9,7 @@ const Banner = () => {
                 <div className="flex text-center flex-col items-center">
                     <div className="max-w-2xl mt-26 md:mt-30 ">
                         <h1 className="md:px-30 sm:px-16 text-5xl font-bold">We Build <span className='text-purple-500'>Productive</span> Apps</h1>
-                        <p className="text-gray-500 py-6">
+                        <p className="text-gray-500 py-6 px-3">
                             At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
                         </p>
                         <a className="btn py-6 mr-5"

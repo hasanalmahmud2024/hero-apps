@@ -27,9 +27,9 @@ const Apps = () => {
             <h1 className='text-5xl font-bold py-3'>Our All Applications</h1>
             <p className="text-sm py-2 mb-5">Explore All Apps on the market developed by us. We code for Millions</p>
 
-            <div className='flex justify-between items-center m-4'>
+            <div className='flex justify-between items-center my-4 mx-2 lg:mx-0'>
                 <h4 className='text-xl font-semibold'>({filteredApps.length}) Apps Found</h4>
-                <label className="input w-64">
+                <label className="input w-48 md:w-64 lg:w-80">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
                             strokeLinejoin="round"
@@ -45,7 +45,7 @@ const Apps = () => {
                     <input type="search" placeholder="Search Apps" onChange={handleSearch} value={searchItem} />
                 </label>
             </div>
-            <div className=' grid grid-cols-1 md:grid-cols-4 gap-4'>
+            <div className='mx-2 grid grid-cols-1 md:grid-cols-4 gap-4'>
                 {filteredApps.length > 0 ?
                     filteredApps.map((app) => <Card key={app.id} app={app}></Card>) :
                     <p className='flex items-center justify-center col-span-full text-3xl text-center min-h-[20vw]'>No App Found</p>
