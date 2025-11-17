@@ -1,5 +1,4 @@
 import React from 'react';
-import logoImg from '../../assets/logo.png'
 import { Link, NavLink } from 'react-router';
 
 
@@ -20,7 +19,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to={'/'} className="btn btn-ghost text-xl">
-                    <img src={logoImg} className='w-7' alt="logo" />
+                    <img src='/logo.png' className='w-7' alt="logo" />
                     <h4 className='font-bold text-pi'>HERO.IO</h4>
                 </Link>
             </div>

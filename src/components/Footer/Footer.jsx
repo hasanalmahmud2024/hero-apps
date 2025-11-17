@@ -1,12 +1,11 @@
 import React from 'react';
-import logoImg from '../../assets/logo.png'
 
 const Footer = () => {
     return (
         <footer >
             <div className=" footer sm:footer-horizontal items-center bg-neutral-900 opacity-70 text-neutral-content px-8 pb-5 pt-12">
                 <aside className='flex items-center '>
-                    <img src={logoImg} className='w-8' alt="logo" />
+                    <img src="/logo.png" className='w-8' alt="logo" />
                     <h4 className='text-xl font-bold '>HERO.IO</h4>
                 </aside>
                 <nav className='sm:justify-self-end '>

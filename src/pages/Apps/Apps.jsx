@@ -5,25 +5,26 @@ import { useLoaderData } from 'react-router';
 const Apps = () => {
     const [searchItem, setSearchItem] = useState('');
     const [filteredApps, setFilteredApps] = useState([]);
-    
+
     const apps = useLoaderData()
     // console.log(apps);
 
-    useEffect(()=>{
+    useEffect(() => {
         setFilteredApps(apps)
-    },[apps])
+    }, [apps])
 
     const handleSearch = (event) => {
         const value = event.target.value;
         setSearchItem(value);
-        const filtered = apps.filter(app =>  
-            app.title.toLowerCase().includes(value.toLowerCase()) 
+        const filtered = apps.filter(app =>
+            app.title.toLowerCase().includes(value.toLowerCase())
         );
         setFilteredApps(filtered);
     }
 
     return (
         <div className='pt-24 max-w-6xl mx-auto text-center mb-8 '>
+            <title>Hero Apps - Apps</title>
             <h1 className='text-5xl font-bold py-3'>Our All Applications</h1>
             <p className="text-sm py-2 mb-5">Explore All Apps on the market developed by us. We code for Millions</p>
 

@@ -49,6 +49,7 @@ const Installation = () => {
 
     return (
         <div className='pt-24 max-w-6xl mx-auto mb-5 min-h-screen'>
+            <title>Hero Apps - Installation</title>
             <h1 className='text-5xl font-bold py-3 text-center'>Your Installed Apps</h1>
             <p className="text-sm py-2 mb-5 text-center">Explore All Trending Apps on the market developed by us</p>
 

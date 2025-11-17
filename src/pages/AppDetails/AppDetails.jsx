@@ -28,6 +28,7 @@ const AppDetails = () => {
 
     return (
         <div className='pt-24 max-w-6xl mx-auto mb-5'>
+            <title>{title}</title>
             <div className="card lg:card-side rounded-none">
                 <figure>
                     <img
