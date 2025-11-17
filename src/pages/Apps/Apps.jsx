@@ -24,7 +24,9 @@ const Apps = () => {
 
     return (
         <div className='pt-24 max-w-6xl mx-auto text-center mb-8 '>
-            <title>Hero Apps - Apps</title>
+            <title>Hero Apps - All Applications</title>
+            <meta name="description" content="Browse all applications built by Hero Apps. Search, filter and explore detailed app pages with ratings and reviews." />
+            <meta name="keywords" content={`hero apps, all apps, app store`} />
             <h1 className='text-5xl font-bold py-3'>Our All Applications</h1>
             <p className="text-sm py-2 mb-5">Explore All Apps on the market developed by us. We code for Millions</p>
 

@@ -1,16 +1,18 @@
 import Banner from '../../components/Banner/Banner';
 import States from '../../components/States/States';
 import Card from '../../components/Card/Card';
-import { Link, useLoaderData} from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 
 const Home = () => {
-
-
     const apps = useLoaderData()
     // console.log(apps);
 
     return (
         <>
+            <title>Hero Apps - Home</title>
+            <meta name="description" content="Discover trending apps developed by Hero Apps. Browse featured applications, platforms, and top downloads." />
+            <meta name="keywords" content={`hero apps, trending apps, top apps`} />
+
             <Banner></Banner>
             <States></States>
 

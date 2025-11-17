@@ -28,7 +28,10 @@ const AppDetails = () => {
 
     return (
         <div className='pt-24 max-w-6xl mx-auto mb-5'>
-            <title>{title}</title>
+            <title>{title} - Hero Apps</title>
+            <meta name="description" content={description?.slice(0, 160)} />
+            <meta name="keywords" content={`${title}, ${companyName}, app, mobile app, downloads, ratings`} />
+
             <div className="card lg:card-side rounded-none">
                 <figure>
                     <img
